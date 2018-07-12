@@ -5,7 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "employees")
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(name = "employee_id")
 public abstract class Employee {
     private int id;
     private String name;
@@ -24,7 +23,7 @@ public abstract class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "employee_id")
+    @Column(name = "id")
     public int getId() {
         return id;
     }

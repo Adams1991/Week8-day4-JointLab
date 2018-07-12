@@ -6,7 +6,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "admins")
 
 public class Admin extends Employee {
 
